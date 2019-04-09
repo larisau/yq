@@ -5,10 +5,10 @@ func parsePath(path string) []string {
 }
 
 func parsePathAccum(paths []string, remaining string) []string {
-	head, tail := nextYamlPath(remaining)
-	if tail == "" {
-		return append(paths, head)
+	if remaining == "" {
+		return paths
 	}
+	head, tail := nextYamlPath(remaining)
 	return parsePathAccum(append(paths, head), tail)
 }
 

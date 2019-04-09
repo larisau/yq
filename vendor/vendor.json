@@ -27,12 +27,6 @@
 			"revisionTime": "2018-06-08T14:01:56Z"
 		},
 		{
-			"checksumSHA1": "7wtGubs4v7+RZovtlmyT9KwA/gE=",
-			"path": "gopkg.in/mikefarah/yaml.v2",
-			"revision": "e175af14aaa1d0eff2ee04b691e4a4827a111416",
-			"revisionTime": "2018-06-13T04:05:11Z"
-		},
-		{
 			"checksumSHA1": "rL5r44ASTGubGW88gqQwlvVQshw=",
 			"path": "gopkg.in/op/go-logging.v1",
 			"revision": "b2cb9fa56473e98db8caba80237377e83fe44db5",
@@ -43,6 +37,12 @@
 			"path": "gopkg.in/spf13/cobra.v0",
 			"revision": "ef82de70bb3f60c65fb8eebacbb2d122ef517385",
 			"revisionTime": "2018-04-27T13:45:50Z"
+		},
+		{
+			"checksumSHA1": "MbzWO2swAl/XAOCc8a2xjDWTaeM=",
+			"path": "gopkg.in/yaml.v3",
+			"revision": "389beb8b70826bc617f5e8d713fe89e5af05f4cc",
+			"revisionTime": "2019-04-05T14:46:35Z"
 		}
 	],
 	"rootPath": "github.com/mikefarah/yq"

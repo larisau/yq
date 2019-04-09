@@ -1,2 +1,2 @@
-a: simple
+a: 'simple'
 b: [1, 2]
