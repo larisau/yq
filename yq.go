@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"os"
 	"reflect"
+	"regexp"
 	"strconv"
 	"strings"
 
@@ -576,6 +577,13 @@ func parseValue(argument string) interface{} {
 	var value, err interface{}
 	var inQuotes = len(argument) > 0 && argument[0] == '"'
 	if !inQuotes {
+		digits, _ := regexp.MatchString("^[0-9]+$", argument)
+		if digits {
+			value, _ := strconv.ParseInt(argument, 0, 64)
+			if err == nil {
+				return value
+			}
+		}
 		value, err = strconv.ParseFloat(argument, 64)
 		if err == nil {
 			return value
